@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formularios.css">
+    <title>Formulario</title>
+    <!--link del botton modo oscuro-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body  id="page" class="bodyClaro">
+    <div class="titleContainer">
+        <button class="btn" onclick=" location.href='../index.html'"><img class="btn--indexBack" src="../img/RnM.png" alt="back index button"></button>
+        <h1 class="title">FORMULARIO</h1>
+        <div class="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+               <i class="fas fa-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+               <i class="fas fa-moon"></i>
+            </div>
+         </div>
+    </div>
+    <form class="form" action="" id="form">
+        <label class="label" for="name">Nombre</label>
+        <input class="input" type="text" name="name" autocomplete="off">
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" name="email" autocomplete="off">
+        <label class="label" for="mensaje">Mensaje</label>
+        <textarea class="text--area" name="mensaje" cols="30" rows="10"></textarea>
+        <button class="button" type="submit">Enviar</button>
+    </form>
+    <script src="./formulario.js"></script>
+</body>
+</html>

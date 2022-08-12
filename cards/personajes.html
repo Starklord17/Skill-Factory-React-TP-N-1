@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./personajes.css">
+    <title>Rick & Morty</title>
+</head>
+<body>
+    <div class="titleContainer">
+        <button class="btn" onclick=" location.href='../index.html'"><img class="btn--indexBack" src="../img/RnM.png" alt="back index button"></button>
+        <h1 class="title">Rick & Morty App - Search</h1>
+    </div>
+    <form action="" id="buscador" class="buscador">
+        <input class="input" type="text" placeholder="Buscar personaje" name="nombreInput" autocomplete="off">
+        <button class="buttonSearch" type="submit" id="button"><img class="img--search" src="https://cdn-icons-png.flaticon.com/512/751/751381.png" alt="search button"/></button>
+    </form>
+    <div class="paginator">
+        <button class="buttonPaginator" name="prev" id="down"><img class="img--prev" src="../img/left-arrow.png" alt="prev page button"/></button>
+        <h3 class="paginator--Page" id="pagina">1</h3><p class="paginator--Page">-</p><h3 class="paginator--Page" id="totalPaginas">1</h3>
+        <button class="buttonPaginator" name="next" id="up"><img class="img--next" src="../img/right-arrow.png" alt="next page button"/></button>
+    </div>
+    <div class="cardContainer" id="personajes"></div>
+    <script src="./personajes.js"></script>
+</body>
+</html>

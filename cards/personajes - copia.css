@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap');
+
+:root {
+    /*-------TABLERO DE COLORES--------*/
+    --background: #2f7541;
+    --colorTitle: #461c43; 
+    --colorText: #0d4871;
+    --backCard: #ebd983;
+    --colorBorderCard: #1f4396;
+    --shadowInput: #0d4871;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.titleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.title {
+    color: var(--colorTitle);
+    margin: 40px 120px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 7;
+}
+.btn--indexBack {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 30px 0 0 30px;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+}
+.btn:hover, .btn:focus {
+    transform: scale(1.3);
+}
+.buscador {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+    font-weight: 500;
+    color: var(--colorText);
+}
+.img--search{
+    width: 40px;
+    height: auto;
+    transition: 0.5s;
+}
+.img--search:hover {
+    transform: scale(1.3);
+}
+.img--next, .img--prev {
+    width: 80px;
+    height: auto;
+    transition: 0.5s;
+}
+.img--next:hover {
+    transform: scale(1.3);
+}
+.img--prev:hover {
+    transform: scale(1.3);
+}
+.buttonSearch, .buttonPaginator {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.paginator {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.paginator--Page{
+    color: var(--colorText);
+    font-size: xx-large;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--colorBorderCard);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--backCard);
+    box-shadow: var(--shadowInput) 5px 5px 0px 0px;
+}
+

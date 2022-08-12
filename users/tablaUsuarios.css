@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #73C8A9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+.container {
+    margin: 100px 0 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn--indexBack {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 20px 0 0 30px;
+}
+.btn {
+    left: 10px;
+    top: 5px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+}
+.btn:hover, .btn:focus {
+    transform: scale(1.3);
+}

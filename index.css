@@ -1,0 +1,165 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/*--------------------------------------Body-------------------------------------------*/
+body {
+    background-image: url(./img/react.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+    /* filter: saturate(20%); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*--------------------------------------Header-----------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.skillLogo {
+    display: flex;
+    margin: 40px 0px 0 40px;
+    width: auto;
+    height: 125px;
+}
+.react {
+    margin: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #f2f2f2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.logoReact {
+    width: 80px;
+    height: auto;
+}
+/*-----------------------------------------Main----------------------------------------*/
+main {
+    display: flex;
+    justify-content:space-evenly
+}
+b {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;;
+    color: #fff;
+  
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+    background-image: linear-gradient(rgb(255, 72, 0) 10%,#e76a00 100%);
+  }
+  
+.btn:hover, .btn:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+  
+.btn:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+
+main .div {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    outline: none;
+    color: #5f6368;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+}
+ul {
+    list-style: none;
+}
+/*--------------------------------------Footer-----------------------------------------*/
+.footer {
+    display: flex;
+    margin: 0 20px 60px 0;
+    justify-content: space-evenly;
+}
+.linkedIn, .gitHub {
+    margin: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.logoLinkedIn, .logoGitHub {
+  width: 30px;
+  height: auto; 
+}
+.gitHub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------------@media-----------------------------------------*/
+@media (max-width: 920px){
+    .skillLogo {
+        height: 80px;
+    }
+    .logoReact {
+        width: 45px;
+    } 
+}
+
+@media (max-width: 690px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .skillLogo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        height: auto;
+    }
+    .logoReact {
+        width: 45px;
+    }
+    .react {
+        margin: 40px 80px 10px 80px;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content:space-evenly;
+        margin: 60px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 35%;
+    }
+}
